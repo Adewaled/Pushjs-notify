@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push Notify</title>
+    <!-- <script src="push.js"></script>
+    <script src="serviceWorker.min.js"></script>
+    <script src="serviceWorker.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.5/push.js"></script>
+
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Web Notification with Pushjs</h1>
+
+      <p>
+        This app will be basic, with just one button to seek permission to send
+        alerts and another to deliver the notification. web notifications using
+        the open-source
+        <a href="https://github.com/Nickersoft/push.js" target="_blank"
+          >Push.js</a
+        >
+        library.
+      </p>
+
+      <button onclick="sendNotif()">Show notification!</button>
+      <button class="requestButton">Request permissions</button>
+    </div>
+
+    <script>
+      function sendNotif() {
+        Push.create("Hello from Adewale!", {
+          body: "Hope you can see this in your browser?",
+          icon: "/or.png",
+          timeout: 13000,
+          onClick: function () {
+            window.focus();
+            this.close();
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

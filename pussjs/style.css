@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    padding: 2rem;
+    background-color: #33b06b;
+}
+a {
+    color: white;
+}
+h1 {
+    max-width: 35rem;
+    margin: 0 auto 3rem;
+}
+p {
+    max-width: 32rem;
+    margin: 0.5rem auto;
+}
+button {
+    padding: 1rem;
+    color: white;
+    background-color: #dea70ef4;
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 0.3rem;
+    margin: 2rem 1rem 0;
+    display: inline-block;
+    font-weight: bold;
+}
+button:hover {
+    opacity: 1.5;
+}
